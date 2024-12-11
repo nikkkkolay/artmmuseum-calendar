@@ -14561,4 +14561,45 @@ a.blue-link:hover::after {
 	margin-top: 9px
 }
 
+/* events__swiper */
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.events__swiper .card-general__img img {
+	object-position: top;
+}
+
+.events__swiper .card-general__description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(239, 240, 244, 0.7);
+	padding: 8px 10px;
+	min-height: 79px;
+}
+
+.events__swiper .card-general__description p {
+	color: #25212d;
+	line-height: 1.1;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 639px) {
+	.events__swiper {
+		margin-top: 30px;
+	}
+}
+
+
+
+
 /*# sourceMappingURL=maps/main.min.css.map */
