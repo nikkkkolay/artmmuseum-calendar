@@ -14563,11 +14563,18 @@ a.blue-link:hover::after {
 
 /* events__swiper */
 
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
 	color: white;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 450px) {
+
+	.swiper-button-next::after,
+	.swiper-button-prev::after {
+		font-size: 36px;
+	}
 }
 
 .events__swiper .card-general__img img {
@@ -14579,7 +14586,7 @@ a.blue-link:hover::after {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(239, 240, 244, 0.7);
+	background-color: rgba(239, 240, 244, 0.8);
 	padding: 8px 10px;
 	min-height: 79px;
 }
@@ -14599,7 +14606,122 @@ a.blue-link:hover::after {
 	}
 }
 
+/* exhibitions__swiper */
 
+.exhibitions {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+	margin: 35px -5px 0;
+}
+
+@media (max-width: 740px) {
+	.exhibitions {
+		grid-template-columns: 1fr;
+	}
+}
+
+.exhibitions__col:first-child,
+.exhibitions__col:last-child {
+	max-height: 600px;
+}
+
+.exhibitions__col:first-child {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 35%;
+	gap: 10px;
+}
+
+.exhibitions__swiper {
+	margin: 0;
+}
+
+.exhibitions__swiper .card-general__img img {
+	object-position: top;
+}
+
+.exhibitions__swiper .card-general__description {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	right: 30px;
+	z-index: 1000000;
+}
+
+@media (max-width: 1100px) {
+	.exhibitions__swiper .card-general__description {
+		bottom: 50%;
+		left: 50px;
+		right: 50px;
+		transform: translateY(50%);
+	}
+}
+
+.exhibitions__swiper .card-general__description .card-areas__title {
+	color: white;
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 1.2;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 1100px) {
+	.exhibitions__swiper .card-general__description .card-areas__title {
+		margin: 0;
+	}
+}
+
+/* перенести рядом со своими стилями */
+
+.areas__card_exhibitions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0;
+}
+
+.areas__card_exhibitions .card-areas__title {
+	margin: 0;
+}
+
+.areas__card_exhibitions .card-areas__img {
+	display: flex;
+	align-items: start;
+}
+
+.areas__card_exhibitions .card-areas__img img {
+	position: unset;
+	transform: unset;
+	height: 180%;
+	transform: translateY(-45%);
+}
+
+.card-general__img.card-general__img_long {
+	position: relative;
+	padding-bottom: 52.5%;
+}
+
+.card-general__img.card-general__img_long::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+@media (max-width: 580px) {
+	.card-general__img.card-general__img_long {
+		padding-bottom: 66.5%;
+	}
+}
 
 
 /*# sourceMappingURL=maps/main.min.css.map */

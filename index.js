@@ -31831,6 +31831,8 @@ var swiper = new Swiper(".events__swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    speed: 1000,
 });
 
 $(".partners__show-more-btn").click(function () {
@@ -32321,3 +32323,16 @@ ymaps.ready(contactsinit);
 
 */
 //# sourceMappingURL=maps/main.min.js.map
+
+var swiper = new Swiper(".exhibitions__swiper", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+});
