@@ -14621,11 +14621,6 @@ a.blue-link:hover::after {
 	}
 }
 
-.exhibitions__col:first-child,
-.exhibitions__col:last-child {
-	max-height: 600px;
-}
-
 .exhibitions__col:first-child {
 	display: flex;
 	flex-direction: column;
@@ -14643,9 +14638,9 @@ a.blue-link:hover::after {
 
 .exhibitions__swiper .card-general__description {
 	position: absolute;
-	bottom: 30px;
-	left: 30px;
-	right: 30px;
+	bottom: 28px;
+	left: 28px;
+	right: 28px;
 	z-index: 1000000;
 }
 
@@ -14660,7 +14655,6 @@ a.blue-link:hover::after {
 
 .exhibitions__swiper .card-general__description .card-areas__title {
 	color: white;
-	font-weight: 600;
 	text-align: left;
 	text-transform: uppercase;
 	line-height: 1.2;
@@ -14686,13 +14680,62 @@ a.blue-link:hover::after {
 	padding: 0;
 }
 
+@media (max-width: 740px) {
+	.areas__card_exhibitions {
+		min-height: 180px;
+	}
+}
+
 .areas__card_exhibitions .card-areas__title {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding: 26px 26px 0 26px;
 	margin: 0;
+	line-height: 1.3;
+}
+
+.areas__card_exhibitions .card-areas__title span {
+	line-height: 1.3;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-align: right;
+}
+
+.card-areas__span-bg {
+	text-transform: uppercase;
+}
+
+.card-areas__span-bg_special {
+	margin-left: 45px;
+}
+
+.card-areas__span-sm {
+	white-space: nowrap;
+	font-size: 22px;
+}
+
+@media (max-width: 1100px) {
+	.card-areas__span-sm {
+		font-size: 16px;
+	}
+}
+
+.areas__card_exhibitions .card-areas__title:hover span::before {
+	position: initial;
 }
 
 .areas__card_exhibitions .card-areas__img {
 	display: flex;
 	align-items: start;
+}
+
+@media (max-width: 1100px) {
+	.areas__card_exhibitions .card-areas__img {
+		height: 55px;
+	}
 }
 
 .areas__card_exhibitions .card-areas__img img {
@@ -14707,6 +14750,18 @@ a.blue-link:hover::after {
 	padding-bottom: 52.5%;
 }
 
+@media (max-width: 940px) {
+	.card-general__img.card-general__img_long {
+		padding-bottom: 63.5%;
+	}
+}
+
+@media (max-width: 740px) {
+	.card-general__img.card-general__img_long {
+		padding-bottom: 65.5%;
+	}
+}
+
 .card-general__img.card-general__img_long::after {
 	content: '';
 	position: absolute;
@@ -14715,12 +14770,6 @@ a.blue-link:hover::after {
 	top: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .4);
-}
-
-@media (max-width: 580px) {
-	.card-general__img.card-general__img_long {
-		padding-bottom: 66.5%;
-	}
 }
 
 

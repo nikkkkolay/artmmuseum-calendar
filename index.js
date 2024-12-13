@@ -31835,6 +31835,19 @@ var swiper = new Swiper(".events__swiper", {
     speed: 1000,
 });
 
+var swiper = new Swiper(".exhibitions__swiper", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+});
+
 $(".partners__show-more-btn").click(function () {
     $(".partners__item:hidden").slideDown(300);
     $(".partners__item:hidden").length < 1 ? $(".partners__show-more-btn").hide() : false;
@@ -32323,16 +32336,3 @@ ymaps.ready(contactsinit);
 
 */
 //# sourceMappingURL=maps/main.min.js.map
-
-var swiper = new Swiper(".exhibitions__swiper", {
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
-    speed: 1000,
-});
