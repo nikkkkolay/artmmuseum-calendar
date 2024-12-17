@@ -14563,8 +14563,8 @@ a.blue-link:hover::after {
 
 /* events__swiper */
 
-.swiper-button-next,
-.swiper-button-prev {
+.events__swiper .swiper-button-next,
+.events__swiper.swiper-button-prev {
 	top: 45%;
 }
 
@@ -14595,21 +14595,30 @@ a.blue-link:hover::after {
 /* exhibitions__swiper */
 
 .exhibitions {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 10px 2fr;
 	grid-template-columns: 1fr 2fr;
 	gap: 10px;
-	margin: 35px -5px 0;
+	margin: 35px 0 0;
 }
 
 @media (max-width: 740px) {
 	.exhibitions {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
 }
 
 .exhibitions__col:first-child {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-preferred-size: 35%;
 	flex-basis: 35%;
 	gap: 10px;
 }
@@ -14619,6 +14628,7 @@ a.blue-link:hover::after {
 }
 
 .exhibitions__swiper .card-general__img img {
+	-o-object-position: top;
 	object-position: top;
 }
 
@@ -14635,6 +14645,8 @@ a.blue-link:hover::after {
 		bottom: 50%;
 		left: 50px;
 		right: 50px;
+		-webkit-transform: translateY(50%);
+		-ms-transform: translateY(50%);
 		transform: translateY(50%);
 	}
 }
@@ -14659,8 +14671,15 @@ a.blue-link:hover::after {
 /* перенести рядом со своими стилями */
 
 .areas__card_exhibitions {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	height: 100%;
 	padding: 0;
@@ -14668,13 +14687,20 @@ a.blue-link:hover::after {
 
 @media (max-width: 740px) {
 	.areas__card_exhibitions {
-		min-height: 180px;
+		min-height: 152px;
 	}
 }
 
 .areas__card_exhibitions .card-areas__title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: end;
 	padding: 26px 26px 0 26px;
 	margin: 0;
@@ -14714,7 +14740,11 @@ a.blue-link:hover::after {
 }
 
 .areas__card_exhibitions .card-areas__img {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: start;
 }
 
@@ -14726,19 +14756,23 @@ a.blue-link:hover::after {
 
 .areas__card_exhibitions .card-areas__img img {
 	position: unset;
+	-webkit-transform: unset;
+	-ms-transform: unset;
 	transform: unset;
 	height: 180%;
+	-webkit-transform: translateY(-45%);
+	-ms-transform: translateY(-45%);
 	transform: translateY(-45%);
 }
 
 .card-general__img.card-general__img_long {
 	position: relative;
-	padding-bottom: 52.5%;
+	padding-bottom: 57.5%;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1100px) {
 	.card-general__img.card-general__img_long {
-		padding-bottom: 63.5%;
+		padding-bottom: 60.5%;
 	}
 }
 
@@ -14757,6 +14791,5 @@ a.blue-link:hover::after {
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .4);
 }
-
 
 /*# sourceMappingURL=maps/main.min.css.map */

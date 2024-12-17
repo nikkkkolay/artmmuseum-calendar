@@ -31842,7 +31842,7 @@ var swiper = new Swiper(".exhibitions__swiper", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 6000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     speed: 1000,

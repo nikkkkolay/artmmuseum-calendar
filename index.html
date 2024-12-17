@@ -10,13 +10,16 @@
         <main class="main">
             <div class="internal-page">
                 <div class="about aos-init aos-animate" data-aos="fade">
-                    <section class="collection">
-                        <div class="container">
+                    <section class="events">
+                        <div class="container events__container">
                             <h2 data-aos="fade" class="aos-init aos-animate">Актуальные выставки и события</h2>
                             <div class="exhibitions collection__row">
                                 <div class="exhibitions__col">
                                     <a class="areas__card areas__card_exhibitions card-areas" href="/dom-remesel/" title="День работника культуры">
                                         <h4 class="card-areas__title">
+                                            <!-- если событие есть и есть что о нем рассказать - то блок кликабельный и переходишь на внутреннюю страницу сайта, читаешь о событии 
+если события нет, то он не кликабельный и просто висит информация. Например, сегодня, 1 марта - День кошек 
+Если события нет - ближайший будет подгружен-->
                                             <span class="card-areas__span-sm">сегодня, 25 марта</span>
                                             <span class="card-areas__span-bg">День работника культуры</span>
                                         </h4>
@@ -33,12 +36,14 @@
                                         </h4>
 
                                         <div class="card-areas__img">
-                                            <img src="5.png" alt="Дом ремесел" />
+                                            <img src="5.png" alt="Бюст А.С. Пушкина" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="exhibitions__col exhibitions__swiper swiper">
                                     <div class="swiper-wrapper">
+                                        <!-- Заполнить атрибут тайтл и алт из названия -->
+                                        <!-- img имеет srcset который  подгружается на моб устройствах -->
                                         <a
                                             href="/online-collections/virtualnaya-vystavka-soldat-s-rebenkom"
                                             class="aos-init aos-animate swiper-slide"
@@ -71,6 +76,7 @@
                                         >
                                             <div class="collection__card card-general">
                                                 <div class="card-general__img card-general__img_long">
+                                                    <!-- img имеет srcset который  подгружается на моб устройствах -->
                                                     <img
                                                         src="https://artmmuseum.ru//upload/resize_cache/iblock/80e/337_450_2/1r3gyt2arsmc6puyi3f9jybajk305ljc.jpg"
                                                         srcset="
@@ -97,7 +103,7 @@
 
                     <section class="collection">
                         <div class="container">
-                            <h2 data-aos="fade" class="aos-init aos-animate">Выставки</h2>
+                            <h2 data-aos="fade" class="aos-init aos-animate">Выставки художественного музея</h2>
 
                             <div class="collection__row events__swiper swiper">
                                 <div class="swiper-wrapper">
@@ -108,6 +114,9 @@
                                         <div class="events__card card-general">
                                             <div class="card-general__label">УЖЕ ИДЕТ - 31 ДЕК 2024</div>
                                             <div class="card-general__img">
+                                                <!-- Заполнить атрибут тайтл и алт из названия -->
+                                                <!-- img имеет srcset который  подгружается на моб устройствах -->
+
                                                 <img
                                                     src="https://artmmuseum.ru//upload/resize_cache/iblock/596/337_450_2/mumzey9dq9rn3xvxfae3npncpsmfqptj.jpg"
                                                     srcset="
