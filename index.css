@@ -137,7 +137,7 @@ h6 {
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(../fonts/Ubuntu_Medium/Ubuntu_Medium.eot);
+	src: url(/fonts/Ubuntu_Medium/Ubuntu_Medium.eot);
 	src: local("Ubuntu_Medium"), local("../fonts/Ubuntu_Medium/Ubuntu_Medium"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.woff) format("woff"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.ttf) format("truetype");
 	font-weight: 500;
 	font-style: normal;
