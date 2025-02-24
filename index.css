@@ -14792,4 +14792,9 @@ a.blue-link:hover::after {
 	background-color: rgba(0, 0, 0, .4);
 }
 
+.video-banner {
+	margin-top: 40px;
+	aspect-ratio: 16/8;
+}
+
 /*# sourceMappingURL=maps/main.min.css.map */
