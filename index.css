@@ -14797,4 +14797,19 @@ a.blue-link:hover::after {
 	aspect-ratio: 16/8;
 }
 
+.hero h1 {
+	font-family: "Noto Serif", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 109px;
+	line-height: 96%;
+	letter-spacing: -.02em;
+	color: #1c1825;
+	text-align: center;
+}
+
 /*# sourceMappingURL=maps/main.min.css.map */
