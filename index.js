@@ -31848,6 +31848,18 @@ var swiper = new Swiper(".exhibitions__swiper", {
     speed: 1000,
 });
 
+var swiper = new Swiper(".main__swiper", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
 $(".partners__show-more-btn").click(function () {
     $(".partners__item:hidden").slideDown(300);
     $(".partners__item:hidden").length < 1 ? $(".partners__show-more-btn").hide() : false;

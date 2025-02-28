@@ -14804,5 +14804,10 @@ a.blue-link:hover::after {
 	width: 100%;
 }
 
+.swiper-pagination-bullet-active {
+	opacity: var(--swiper-pagination-bullet-opacity, 1);
+	background: white
+}
+
 
 /*# sourceMappingURL=maps/main.min.css.map */
