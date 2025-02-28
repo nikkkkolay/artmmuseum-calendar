@@ -17,15 +17,27 @@
             <section class="hero">
                 <div class="container hero__container aos-init aos-animate">
                     <h1>МУРМАНСКИЙ ОБЛАСТНОЙ ХУДОЖЕСТВЕННЫЙ МУЗЕЙ</h1>
-                    <div class="video-banner">
-                        <iframe
-                            src="https://vkvideo.ru/video_ext.php?oid=-11742142&id=456240377&hd=1&autoplay=1"
-                            width="100%"
-                            height="100%"
-                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                            frameborder="0"
-                            allowfullscreen
-                        ></iframe>
+
+                    <div class="exhibitions__col exhibitions__swiper swiper main-banners">
+                        <div class="swiper-wrapper">
+                            <a class="aos-init aos-animate swiper-slide" data-aos="fade" href="">
+                                <img src="https://mauniver.ru/upload/iblock/5c3/zx4lod7unxfcgej7a53urb2atspbmm03/bolshoydenotkrytykh.jpg" />
+                            </a>
+                            <div class="aos-init aos-animate swiper-slide" data-aos="fade">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/Ttl8Gg-P-Ao?si=abn4saRkVBKpo4EX"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </section>
@@ -38,9 +50,6 @@
                                 <div class="exhibitions__col">
                                     <a class="areas__card areas__card_exhibitions card-areas" href="/dom-remesel/" title="День работника культуры">
                                         <h4 class="card-areas__title">
-                                            <!-- если событие есть и есть что о нем рассказать - то блок кликабельный и переходишь на внутреннюю страницу сайта, читаешь о событии 
-если события нет, то он не кликабельный и просто висит информация. Например, сегодня, 1 марта - День кошек 
-Если события нет - ближайший будет подгружен-->
                                             <span class="card-areas__span-sm">сегодня, 25 марта</span>
                                             <span class="card-areas__span-bg">День работника культуры</span>
                                         </h4>
@@ -63,8 +72,6 @@
                                 </div>
                                 <div class="exhibitions__col exhibitions__swiper swiper">
                                     <div class="swiper-wrapper">
-                                        <!-- Заполнить атрибут тайтл и алт из названия -->
-                                        <!-- img имеет srcset который  подгружается на моб устройствах -->
                                         <a
                                             href="/online-collections/virtualnaya-vystavka-soldat-s-rebenkom"
                                             class="aos-init aos-animate swiper-slide"
@@ -73,31 +80,6 @@
                                         >
                                             <div class="collection__card card-general">
                                                 <div class="card-general__img card-general__img_long">
-                                                    <img
-                                                        src="https://artmmuseum.ru/upload/resize_cache/iblock/b6c/338_279_2/v71o3v5p62pa3pplmnza8kdgs8ipld4o.jpg"
-                                                        srcset="
-                                                            https://artmmuseum.ru/upload/resize_cache/iblock/b6c/338_279_2/v71o3v5p62pa3pplmnza8kdgs8ipld4o.jpg 2x
-                                                        "
-                                                        alt="Виртуальная выставка «Живопись Свена Петровича Локко». К 100-летию со дня рождения художника"
-                                                    />
-                                                    <div class="card-general__description">
-                                                        <h4 class="card-areas__title">
-                                                            Выставка «Венера Советская». Живопись, скульптура из собрания Государственного Русского
-                                                            музея
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a
-                                            href="/online-collections/virtualnaya-vystavka-soldat-s-rebenkom"
-                                            class="aos-init aos-animate swiper-slide"
-                                            data-aos="fade"
-                                            title="Выставка «Венера Советская». Живопись, скульптура из собрания Государственного Русского музея"
-                                        >
-                                            <div class="collection__card card-general">
-                                                <div class="card-general__img card-general__img_long">
-                                                    <!-- img имеет srcset который  подгружается на моб устройствах -->
                                                     <img
                                                         src="https://artmmuseum.ru//upload/resize_cache/iblock/80e/337_450_2/1r3gyt2arsmc6puyi3f9jybajk305ljc.jpg"
                                                         srcset="
@@ -135,9 +117,6 @@
                                         <div class="events__card card-general">
                                             <div class="card-general__label">УЖЕ ИДЕТ - 31 ДЕК 2024</div>
                                             <div class="card-general__img">
-                                                <!-- Заполнить атрибут тайтл и алт из названия -->
-                                                <!-- img имеет srcset который  подгружается на моб устройствах -->
-
                                                 <img
                                                     src="https://artmmuseum.ru/upload/resize_cache/iblock/b6c/338_279_2/v71o3v5p62pa3pplmnza8kdgs8ipld4o.jpg"
                                                     srcset="

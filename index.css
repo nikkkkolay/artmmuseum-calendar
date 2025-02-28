@@ -8322,7 +8322,7 @@ a.blue-link:hover::after {
 }
 
 .internal-page {
-	padding-top: 140px;
+	padding-top: 70px;
 	margin-bottom: 110px
 }
 
@@ -8334,7 +8334,7 @@ a.blue-link:hover::after {
 
 @media (max-width:639px) {
 	.internal-page {
-		padding-top: 77px
+		padding-top: 33px
 	}
 }
 
@@ -14792,9 +14792,16 @@ a.blue-link:hover::after {
 	background-color: rgba(0, 0, 0, .4);
 }
 
-.video-banner {
+.main-banners {
 	margin-top: 40px;
-	aspect-ratio: 16/8;
+	aspect-ratio: 21/9;
+}
+
+.main-banners img {
+	object-position: top;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }
 
 
