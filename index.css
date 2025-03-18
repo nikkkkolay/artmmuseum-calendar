@@ -9635,6 +9635,10 @@ a.blue-link::before {
 }
 
 .item-mediacenter__description {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 	margin-left: 55px;
 	font-size: 16px;
 	line-height: 120%;
@@ -12224,6 +12228,10 @@ a.blue-link::before {
 	line-height: 1.3
 }
 
+.areas__card_exhibitions .card-areas__title:first-child {
+	padding: 21px;
+}
+
 .areas__card_exhibitions .card-areas__title span {
 	line-height: 1.3;
 	overflow: hidden;
@@ -12274,7 +12282,8 @@ a.blue-link::before {
 
 .card-general__img.card-general__img_long {
 	position: relative;
-	padding-bottom: 57.5%
+	padding-bottom: 57.5%;
+	min-height: 152px;
 }
 
 @media (max-width:1100px) {
@@ -12302,7 +12311,7 @@ a.blue-link::before {
 	}
 
 	.card-general__img.card-general__img_long {
-		padding-bottom: 56.5%
+		padding-bottom: 67.5%
 	}
 }
 
@@ -12315,16 +12324,13 @@ a.blue-link::before {
 	.areas__card_exhibitions {
 		min-height: 152px
 	}
+
+	.card-general__img.card-general__img_long {
+		padding-bottom: 43.5%;
+	}
 }
 
-.item-mediacenter__description {
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical
-}
-
-/*# sourceMappingURL=maps/main.min.css.map */
+/*Секци с баннерами */
 
 .main-banners {
 	margin-top: 40px;
@@ -12343,6 +12349,8 @@ a.blue-link::before {
 	opacity: var(--swiper-pagination-bullet-opacity, 1);
 	background: white
 }
+
+/* Календарь событий */
 
 
 /*# sourceMappingURL=maps/main.min.css.map */
