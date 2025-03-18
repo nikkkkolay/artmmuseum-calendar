@@ -31858,6 +31858,15 @@ var swiper = new Swiper(".main__swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    on: {
+        init: function () {
+            const slidesCount = this.slides.length - this.loopedSlides * 2;
+            if (slidesCount === 1) {
+                document.querySelector(".swiper-button-next").style.display = "none";
+                document.querySelector(".swiper-button-prev").style.display = "none";
+            }
+        },
+    },
 });
 
 $(".partners__show-more-btn").click(function () {
