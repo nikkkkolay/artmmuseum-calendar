@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+        <div class="wrapper">
+            <header class="header aos-init aos-animate" data-aos="fade">
+                <div class="search-header">
+                    <div class="search-header__container">
+                        <form action="/search/" method="GET" class="search-header__input">
+                            <input type="text" name="q" placeholder="Введите запрос..." />
+                        </form>
+                        <div class="search-header__close"></div>
+                    </div>
+                </div>
+                <div class="container header__container">
+                    <a class="header__logo logo" href="/">
+                        <img src="/local/templates/museum/images/icons/logo.svg" alt="logo" />
+                    </a>
+                    <div class="header__left">
+                        <div class="header__burger"><span> </span><span> </span><span> </span></div>
+                        <div class="header__menu menu">
+                            <div class="menu__overlay"></div>
+                            <div class="menu__close"></div>
+
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <div class="menu__link">Выставки и события<span class="menu__item-triangle"></span></div>
+                                    <div class="submenu submenu1">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/events/">Выставки и события</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/special-projects/">Специальные проекты</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/online-collections/">Музей онлайн</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Посетителям<span class="menu__item-triangle"></span></div>
+                                    <div class="submenu submenu2">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/pushkin-card/">Пушкинская карта</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/prices/">Цены и льготы</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/plan-visit/">Спланировать визит</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Музей<span class="menu__item-triangle"></span></div>
+                                    <div class="submenu submenu3">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/history/">История</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/glavnoe-zdanie/">Главное здание</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/dom-remesel/">Дом Ремесел</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/kvts-russkogo-muzeya/">КВЦ Русского музея</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/contacts/">Контакты</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/employees/">Сотрудники</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/official-materials/">Официальные материалы</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Новости и медиаресурсы<span class="menu__item-triangle"></span></div>
+                                    <div class="submenu submenu4">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="/mediacenter/">Новости и статьи</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="http://arctic.artmmuseum.ru/">Группа «Арктика»</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="https://route.artmmuseum.ru/">Искусство в знакомом маршруте</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a class="submenu__link" href="https://goskatalog.ru/portal/#/museums?id=2070">Музей в Госкаталоге</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    class="submenu__link"
+                                                    href="https://ar.culture.ru/ru/museum/murmanskiy-oblastnoy-hudozhestvennyy-muzey"
+                                                    >Музей в Artefact</a
+                                                >
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    class="submenu__link"
+                                                    href="https://izi.travel/en/9dcd-murmanskiy-oblastnoy-khudozhestvennyy-muzey/ru"
+                                                    >Музей в IZI.Travel</a
+                                                >
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    class="submenu__link"
+                                                    href="https://www.culture.ru/institutes/7991/murmanskii-oblastnoi-khudozhestvennyi-muzei"
+                                                    >Музей в Культура.PRO</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="header__btn btn-header btn-header-mobile">
+                                <a class="btn-header__text" href="#btn-header-mobile">Купить билет </a>
+                                <ul class="btn-header__list" id="btn-header-mobile">
+                                    <li class="btn-header__item">
+                                        <a
+                                            class="btn-header__link"
+                                            href="https://widget.afisha.yandex.ru/w/venues/29432?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                            target="_blank"
+                                            rel="nofollow"
+                                            >Главное здание</a
+                                        >
+                                    </li>
+                                    <li class="btn-header__item">
+                                        <a
+                                            class="btn-header__link"
+                                            href="https://widget.afisha.yandex.ru/w/venues/6168?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                            target="_blank"
+                                            rel="nofollow"
+                                            >КВЦ Русского музея</a
+                                        >
+                                    </li>
+                                    <li class="btn-header__item">
+                                        <a
+                                            class="btn-header__link"
+                                            href="https://widget.afisha.yandex.ru/w/venues/56039?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                            target="_blank"
+                                            rel="nofollow"
+                                            >Дом ремесел</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__icons">
+                            <div class="header__search">
+                                <img src="/local/templates/museum/images/icons/search.svg" alt="alt" />
+                            </div>
+                            <a class="header__visible" href="#">
+                                <img src="/local/templates/museum/images/icons/eye.svg" alt="alt" />
+                            </a>
+                            <a class="header__visible2 bvi-link" href="#" data-bvi="close">
+                                <img src="/local/templates/museum/images/icons/eye.svg" alt="alt" />
+                            </a>
+                        </div>
+
+                        <div class="header__btn btn-header btn-header-desktop">
+                            <div class="btn-header__text">Купить билет</div>
+                            <ul class="btn-header__list">
+                                <li class="btn-header__item">
+                                    <a
+                                        class="btn-header__link"
+                                        href="https://widget.afisha.yandex.ru/w/venues/29432?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                        target="_blank"
+                                        rel="nofollow"
+                                        >Главное здание</a
+                                    >
+                                </li>
+                                <li class="btn-header__item">
+                                    <a
+                                        class="btn-header__link"
+                                        href="https://widget.afisha.yandex.ru/w/venues/6168?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                        target="_blank"
+                                        rel="nofollow"
+                                        >КВЦ Русского музея</a
+                                    >
+                                </li>
+                                <li class="btn-header__item">
+                                    <a
+                                        class="btn-header__link"
+                                        href="https://widget.afisha.yandex.ru/w/venues/56039?clientKey=c667e23b-a10e-4683-9ee9-1e564173d55a"
+                                        target="_blank"
+                                        rel="nofollow"
+                                        >Дом ремесел</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="internal-page">
+                    <div class="mediacenter-page aos-init aos-animate" data-aos="fade">
+                        <div class="mediacenter-page__header">
+                            <div class="container">
+                                <h1>Календарь событий</h1>
+                                <div class="mediacenter-page__filter-wrapper">
+                                    <div class="mediacenter-page__item-text">
+                                        Формат события
+                                        <span class="mediacenter-page__item-arrow">
+                                            <img alt="alt" src="/local/templates/museum/images/icons/arrow-black-bottom.svg" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mediacenter-page__items-bottom">
+                                    <div class="mediacenter-page__selected">СТАТЬИ <span class="mediacenter-page__selected-remove"></span></div>
+                                    <div class="mediacenter-page__selected">ФОТООТЧЕТ <span class="mediacenter-page__selected-remove"></span></div>
+                                    <div class="mediacenter-page__selected">НОВОСТИ <span class="mediacenter-page__selected-remove"></span></div>
+                                    <div class="mediacenter-page__selected">ПОСТРЕЛИЗ <span class="mediacenter-page__selected-remove"></span></div>
+                                </div>
+                                <p role="status"></p>
+                                <div class="mediacenter-page__items">
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/den-rozhdeniya-u-petrovoy-valentiny-ivanovny" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">18</span>
+                                                <span class="item-mediacenter__date-month">января</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">День рождения у Петровой Валентины Ивановны</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a
+                                            href="/calendar/ot-klassiki-do-sovremennogo-iskusstva-posvyashchennaya-35-letiyu-sozdaniya-murmanskogo-oblastnogo-kh"
+                                            class="mediacenter__item item-mediacenter"
+                                        >
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">23</span>
+                                                <span class="item-mediacenter__date-month">января</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">
+                                                Торжественное открытие выставки «От классики до современного искусства», посвященная 35-летию создания
+                                                Мурманского областного художественного музея. Живопись, графика, ДПИ из собрания музея
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/rodilsya-ovchinnikov-vyacheslav-vladimirovich" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">21</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">21 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/22-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">22</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">22 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/23-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">23</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">23 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/24-fevralya-rodilsya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">24</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">24 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/25-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">25</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">25 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/26-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">26</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">26 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/27-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">27</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">27 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/28-fevralya" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">28</span>
+                                                <span class="item-mediacenter__date-month">февраля</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">28 февраля</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/3-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">03</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">3 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/4-marta-" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">04</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">4 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/5-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">05</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">5 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/6-marta-" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">06</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">6 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/7-marta-" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">07</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">7 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/8-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">08</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">8 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/9-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">09</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">9 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/10-marta-" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">10</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">10 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/11-marta-" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">11</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">11 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/12-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">12</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">12 марта</div>
+                                        </a>
+                                    </div>
+                                    <div class="mediacenter-page__item-wrapper">
+                                        <a href="/calendar/13-marta" class="mediacenter__item item-mediacenter">
+                                            <div class="item-mediacenter__date">
+                                                <span class="item-mediacenter__date-num">13</span>
+                                                <span class="item-mediacenter__date-month">марта</span>
+                                            </div>
+                                            <div class="item-mediacenter__description">13 марта</div>
+                                        </a>
+                                    </div>
+
+                                    <br />
+                                    <div class="blog-page-navigation search-result__pagination">
+                                        <span class="blog-page-title">Страницы:</span>
+                                        <span class="blog-page-first blog-page-current">1</span>
+                                        <span class="blog-vert-separator">|</span>
+                                        <a href="/calendar/?PAGEN_1=2" class="">2</a>
+                                        <span class="blog-vert-separator">|</span>
+                                        <a class="blog-page-next" href="/calendar/?PAGEN_1=2">След.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer aos-init" data-aos="fade">
+                <div class="container footer__container">
+                    <div class="footer__top">
+                        <div class="footer__row">
+                            <div class="item-footer">
+                                <div class="item-footer__title">ВЫСТАВКИ И СОБЫТИЯ</div>
+                                <ul class="item-footer__list">
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/events/">Выставки и события</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/special-projects/">Специальные проекты</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/online-collections/">Музей онлайн</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item-footer">
+                                <div class="item-footer__title">ПОСЕТИТЕЛЯМ</div>
+                                <ul class="item-footer__list">
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/pushkin-card/">Пушкинская карта</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/prices/">Цены и льготы</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/plan-visit/">Спланировать визит</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item-footer">
+                                <div class="item-footer__title">Музей</div>
+                                <ul class="item-footer__list">
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/history/">История</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/glavnoe-zdanie/">Главное здание</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/dom-remesel/">Дом Ремесел</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/kvts-russkogo-muzeya/">КВЦ Русского музея</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/contacts/">Контакты</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/employees/">Сотрудники</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/official-materials/">Официальные материалы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item-footer">
+                                <div class="item-footer__title">МЕДИАЦЕНТР</div>
+                                <ul class="item-footer__list">
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="/mediacenter/">Новости и статьи</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="http://arctic.artmmuseum.ru/">Группа «Арктика»</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="https://route.artmmuseum.ru/">Искусство в знакомом маршруте</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="https://goskatalog.ru/portal/#/museums?id=2070">Музей в Госкаталоге</a>
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="https://ar.culture.ru/ru/museum/murmanskiy-oblastnoy-hudozhestvennyy-muzey"
+                                            >Музей в Artefact</a
+                                        >
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a class="item-footer__link" href="https://izi.travel/en/9dcd-murmanskiy-oblastnoy-khudozhestvennyy-muzey/ru"
+                                            >Музей в IZI.Travel</a
+                                        >
+                                    </li>
+                                    <li class="item-footer__item">
+                                        <a
+                                            class="item-footer__link"
+                                            href="https://www.culture.ru/institutes/7991/murmanskii-oblastnoi-khudozhestvennyi-muzei"
+                                            >Музей в Культура.PRO</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__middle">
+                        <div class="footer__row">
+                            <div class="item-footer">
+                                <div class="item-footer__title">МЫ В СОЦСЕТЯХ</div>
+                                <div class="item-footer__social">
+                                    <a href="http://vk.com/murmanskmuseum" target="_blank">VK</a
+                                    ><a href="https://t.me/artmus51" target="_blank">TELEGRAM</a>
+                                    <a href="http://www.youtube.com/channel/UC5UAhxudyEJsdAOMWrEz7rQ" target="_blank">YOUTUBE</a>
+                                </div>
+                            </div>
+                            <div class="item-footer">
+                                <div class="item-footer__title">КОНТАКТЫ</div>
+                                <div class="item-footer__contacts">
+                                    <div class="item-footer__contact">
+                                        <a href="/dom-remesel/"> Дом ремесел: ул.Книповича, д.23А </a>
+                                        <a href="tel:7815245083878152450860">Тел: +7 (8152) 45-08-38, +7 (8152) 45-08-60</a>
+                                        <a href="mailto:onir@artmmuseum.ru">E-mail: onir@artmmuseum.ru</a>
+                                    </div>
+                                    <div class="item-footer__contact">
+                                        <a href="/glavnoe-zdanie/"> Главное здание: ул. Коминтерна 13 </a>
+                                        <a href="tel:7815245631078152450385">Тел: +7 (8152) 45-63-10, +7 (8152) 45-03-85</a>
+                                        <a href="mailto:info@artmmuseum.ru">E-mail: info@artmmuseum.ru</a>
+                                    </div>
+                                    <div class="item-footer__contact">
+                                        <a href="/kvts-russkogo-muzeya/"> КВЦ: ул. Софьи Перовской, 3, II этаж </a>
+                                        <a href="tel:7815299435678152994357">Тел: +7 (8152) 99-43-56, +7 (8152) 99-43-57</a>
+                                        <a href="mailto:kvcrm@artmmuseum.ru">E-mail: kvcrm@artmmuseum.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer item-footer__schedule-wrapper">
+                                <div class="item-footer__title">ЧАСЫ РАБОТЫ</div>
+                                <div class="item-footer__schedule">
+                                    Ср, Чт, Пт, Сб, Вс: 11:00 - 19:00 <br />
+                                    Кассы закрываются за полчаса до окончания работы музея
+                                </div>
+                            </div>
+                            <div class="item-footer">
+                                <div class="item-footer__title">ПОДПИСАТЬСЯ НА НОВОСТИ</div>
+                                <form method="post" class="item-footer__news" id="sub-form">
+                                    <div class="item-footer__input input-white">
+                                        <input type="email" placeholder="E-mail" name="eaddress" required="" />
+                                        <button type="submit"></button>
+                                    </div>
+                                    <div class="item-footer__agreement agreement agreement-white">
+                                        <div class="checkbox">
+                                            <input
+                                                class="checkbox__input"
+                                                id="formAgreement"
+                                                checked=""
+                                                type="checkbox"
+                                                name="agreement"
+                                                required=""
+                                                value="1"
+                                            />
+                                            <label class="checkbox__label" for="formAgreement">
+                                                <div class="checkbox__label-arrow">
+                                                    <img src="/local/templates/museum/images/icons/arrow-checkbox-white.svg" alt="alt" />
+                                                </div>
+                                                <span>Я согласен с политикой обработки персональных данных</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <div class="footer__row">
+                            <div class="item-footer item-footer--big">© 1990-2025 Мурманский областной художественный музей</div>
+                            <div class="item-footer"><a href="/privacy-policy/">Политика конфиденциальности</a></div>
+                            <div class="item-footer">Разработано в Bofer.ru</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
