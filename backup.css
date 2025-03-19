@@ -158,8 +158,8 @@ img {
 
 @font-face {
 	font-family: Inter;
-	src: url(./fonts/Inter_Regular/Inter_Regular.eot);
-	src: local("Inter_Regular"), local("./fonts/Inter_Regular/Inter_Regular"), url(./fonts/Inter_Regular/Inter_Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/Inter_Regular/Inter_Regular.woff) format("woff"), url(./fonts/Inter_Regular/Inter_Regular.ttf) format("truetype");
+	src: url(../fonts/Inter_Regular/Inter_Regular.eot);
+	src: local("Inter_Regular"), local("../fonts/Inter_Regular/Inter_Regular"), url(../fonts/Inter_Regular/Inter_Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Inter_Regular/Inter_Regular.woff) format("woff"), url(../fonts/Inter_Regular/Inter_Regular.ttf) format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap
@@ -167,8 +167,8 @@ img {
 
 @font-face {
 	font-family: "Noto Serif Display";
-	src: url(./fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot);
-	src: local("NotoSerifDisplay_Medium"), local("./fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium"), url(./fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.woff) format("woff"), url(./fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.ttf) format("truetype");
+	src: url(../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot);
+	src: local("NotoSerifDisplay_Medium"), local("../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium"), url(../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.woff) format("woff"), url(../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.ttf) format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap
@@ -176,8 +176,8 @@ img {
 
 @font-face {
 	font-family: "Noto Serif";
-	src: url(./fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot);
-	src: local("NotoSerifDisplay_SemiCondensed_Regular"), local("./fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular"), url(./fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.woff) format("woff"), url(./fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.ttf) format("truetype");
+	src: url(../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot);
+	src: local("NotoSerifDisplay_SemiCondensed_Regular"), local("../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular"), url(../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.woff) format("woff"), url(../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.ttf) format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap
@@ -185,8 +185,8 @@ img {
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(./fonts/Ubuntu_Bold/Ubuntu_Bold.eot);
-	src: local("Ubuntu_Bold"), local("./fonts/Ubuntu_Bold/Ubuntu_Bold"), url(./fonts/Ubuntu_Bold/Ubuntu_Bold.eot?#iefix) format("embedded-opentype"), url(./fonts/Ubuntu_Bold/Ubuntu_Bold.woff) format("woff"), url(./fonts/Ubuntu_Bold/Ubuntu_Bold.ttf) format("truetype");
+	src: url(../fonts/Ubuntu_Bold/Ubuntu_Bold.eot);
+	src: local("Ubuntu_Bold"), local("../fonts/Ubuntu_Bold/Ubuntu_Bold"), url(../fonts/Ubuntu_Bold/Ubuntu_Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Ubuntu_Bold/Ubuntu_Bold.woff) format("woff"), url(../fonts/Ubuntu_Bold/Ubuntu_Bold.ttf) format("truetype");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap
@@ -194,8 +194,8 @@ img {
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(./fonts/Ubuntu_Medium/Ubuntu_Medium.eot);
-	src: local("Ubuntu_Medium"), local("./fonts/Ubuntu_Medium/Ubuntu_Medium"), url(./fonts/Ubuntu_Medium/Ubuntu_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/Ubuntu_Medium/Ubuntu_Medium.woff) format("woff"), url(./fonts/Ubuntu_Medium/Ubuntu_Medium.ttf) format("truetype");
+	src: url(../fonts/Ubuntu_Medium/Ubuntu_Medium.eot);
+	src: local("Ubuntu_Medium"), local("../fonts/Ubuntu_Medium/Ubuntu_Medium"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.woff) format("woff"), url(../fonts/Ubuntu_Medium/Ubuntu_Medium.ttf) format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap
@@ -203,8 +203,8 @@ img {
 
 @font-face {
 	font-family: Ubuntu;
-	src: url(./fonts/Ubuntu_Regular/Ubuntu_Regular.eot);
-	src: local("Ubuntu_Regular"), local("./fonts/Ubuntu_Regular/Ubuntu_Regular"), url(./fonts/Ubuntu_Regular/Ubuntu_Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/Ubuntu_Regular/Ubuntu_Regular.woff) format("woff"), url(./fonts/Ubuntu_Regular/Ubuntu_Regular.ttf) format("truetype");
+	src: url(../fonts/Ubuntu_Regular/Ubuntu_Regular.eot);
+	src: local("Ubuntu_Regular"), local("../fonts/Ubuntu_Regular/Ubuntu_Regular"), url(../fonts/Ubuntu_Regular/Ubuntu_Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Ubuntu_Regular/Ubuntu_Regular.woff) format("woff"), url(../fonts/Ubuntu_Regular/Ubuntu_Regular.ttf) format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap
@@ -7014,10 +7014,6 @@ a.blue-link::before {
 	font-weight: 400
 }
 
-.show-more-btn-wrapper .show-more-btn span {
-	font-size: 16px;
-}
-
 .card-general__description {
 	margin-top: 8px;
 	font-family: Ubuntu;
@@ -7042,17 +7038,14 @@ a.blue-link::before {
 }
 
 .show-more-btn-wrapper .show-more-btn {
-	display: flex;
-	justify-content: center;
 	cursor: pointer;
-	padding: 15px 15px 0 15px;
+	padding-top: 15px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center;
-	width: 100%;
+	align-items: center
 }
 
 .show-more-btn-wrapper .show-more-btn::before {
@@ -8913,7 +8906,7 @@ a.blue-link::before {
 .quadrants__block {
 	width: calc(100% + 1px);
 	padding-bottom: calc(100% + 1px);
-	background: url('https://artmmuseum.ru/local/templates/museum/images/blocks/hero/home-hero.jpg') 0 0/1200% 400% no-repeat;
+	background: url(../images/blocks/hero/home-hero.jpg) 0 0/1200% 400% no-repeat;
 	-webkit-transition: opacity .3s, -webkit-transform .4s linear, -webkit-box-shadow .3s;
 	transition: transform .4s linear, opacity .3s, box-shadow .3s, -webkit-transform .4s linear, -webkit-box-shadow .3s;
 	-o-transition: transform .4s linear, opacity .3s, box-shadow .3s;
@@ -9635,10 +9628,6 @@ a.blue-link::before {
 }
 
 .item-mediacenter__description {
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
 	margin-left: 55px;
 	font-size: 16px;
 	line-height: 120%;
@@ -11353,12 +11342,6 @@ a.blue-link::before {
 	width: 33.333333%
 }
 
-.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
-	padding: 5px;
-	width: 33.333333%;
-}
-
-
 @media (max-width:1100px) {
 
 	.hero__anim,
@@ -11381,11 +11364,6 @@ a.blue-link::before {
 	.mediacenter-page__item-wrapper {
 		width: 50%
 	}
-
-	.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
-		width: 50%;
-	}
-
 }
 
 .search-page__header-row {
@@ -11968,13 +11946,9 @@ a.blue-link::before {
 }
 
 .events__swiper .swiper-button-next,
-.events__swiper .swiper-button-prev {
+.events__swiper .swiper-button-prev,
+.events__swiper.swiper-button-prev {
 	top: 45%
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-	opacity: 0.7;
 }
 
 .card-general__img.card-general__img_long::after {
@@ -12106,18 +12080,6 @@ a.blue-link::before {
 		width: 100%
 	}
 
-
-	.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
-		width: 100%;
-	}
-
-	.mediacenter-home-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		margin-top: 30px;
-	}
-
 	.search-page__header-row {
 		margin-top: 28px;
 		position: relative
@@ -12176,12 +12138,12 @@ a.blue-link::before {
 		flex: 0 1 calc(100% - 10px)
 	}
 
-	.exhibitions {
-		margin: 30px 0 0;
-	}
-
 	.events__swiper {
 		margin-top: 30px
+	}
+
+	.exhibitions {
+		margin: 30px 0 0;
 	}
 
 	.mediacenter .mediacenter-home-wrapper {
@@ -12195,6 +12157,7 @@ a.blue-link::before {
 	-ms-grid-columns: 1fr 10px 2fr;
 	grid-template-columns: 1fr 2fr;
 	gap: 10px;
+	margin: 35px 0 0
 }
 
 .areas__card_exhibitions,
@@ -12257,13 +12220,9 @@ a.blue-link::before {
 	-webkit-box-align: end;
 	-ms-flex-align: end;
 	align-items: end;
-	padding: 21px 21px 0;
+	padding: 26px 26px 0;
 	margin: 0;
 	line-height: 1.3
-}
-
-.areas__card_exhibitions .card-areas__title:first-child {
-	padding: 21px;
 }
 
 .areas__card_exhibitions .card-areas__title span {
@@ -12316,8 +12275,7 @@ a.blue-link::before {
 
 .card-general__img.card-general__img_long {
 	position: relative;
-	padding-bottom: 57.5%;
-	min-height: 152px;
+	padding-bottom: 57.5%
 }
 
 @media (max-width:1100px) {
@@ -12345,7 +12303,7 @@ a.blue-link::before {
 	}
 
 	.card-general__img.card-general__img_long {
-		padding-bottom: 67.5%
+		padding-bottom: 56.5%
 	}
 }
 
@@ -12358,33 +12316,14 @@ a.blue-link::before {
 	.areas__card_exhibitions {
 		min-height: 152px
 	}
-
-	.card-general__img.card-general__img_long {
-		padding-bottom: 46.5%;
-	}
 }
 
-/*Секци с баннерами */
-
-.main-banners {
-	margin-top: 40px;
-	aspect-ratio: 20/9;
+.item-mediacenter__description {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical
 }
-
-.main-banners img {
-	object-position: top;
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-	border-radius: 10px;
-}
-
-.swiper-pagination-bullet-active {
-	opacity: var(--swiper-pagination-bullet-opacity, 1);
-	background: white
-}
-
-/* bx_incl_area */
 
 .exhibitions__col-sm #bx_incl_area_7_4 {
 	height: 100%;
@@ -12400,60 +12339,26 @@ a.blue-link::before {
 	flex-wrap: wrap;
 }
 
-/* Календарь событий */
-
-.calendar {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	margin-top: 50px;
-}
-
-.calendar__day {
-	padding: 16px;
-	border: 1px solid #fff;
-	background-color: #f0f1f5;
-	cursor: pointer;
-	aspect-ratio: 1/1;
-	position: relative;
-}
-
-.calendar__number {
-	position: absolute;
-	left: 0;
-	top: 0;
-	padding: 5px;
-	width: 28px;
-	height: 28px;
-	background-color: #1c1825;
-	color: #fff;
+.mediacenter-home-wrapper {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
-/* .day-wrapper:nth-child(1) {
-	border-top-left-radius: 10px;
+.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
+	padding: 5px;
+	width: 33.333333%;
 }
 
-.day-wrapper:nth-child(7) {
-	border-top-right-radius: 10px;
+@media (max-width: 1100px) {
+	.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
+		width: 50%;
+	}
 }
 
-.day-wrapper:nth-child(19) {
-	border-bottom-right-radius: 10px;
-}
-
-.day-wrapper:nth-child(35) {
-	border-bottom-right-radius: 10px;
-} */
-
-.calendar__day:hover {
-	background-color: #e7e5ec;
-}
-
-@media (max-width: 992px) {
-	.calendar {
-		margin-top: 40px;
+@media (max-width: 639px) {
+	.mediacenter-home-wrapper .mediacenter-home-wrapper__item {
+		width: 100%;
 	}
 }
 
