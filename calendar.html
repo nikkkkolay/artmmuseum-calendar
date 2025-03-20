@@ -14,71 +14,156 @@
     </head>
     <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
         <div class="wrapper">
+            <header class="header aos-init aos-animate" data-aos="fade">
+                <div class="search-header">
+                    <div class="search-header__container">
+                        <form action="/search/" method="GET" class="search-header__input">
+                            <input type="text" name="q" placeholder="Введите запрос..." />
+                        </form>
+                        <div class="search-header__close"></div>
+                    </div>
+                </div>
+                <div class="container header__container">
+                    <a class="header__logo logo" href="/">
+                        <img src="https://artmmuseum.ru/local/templates/museum/images/icons/logo.svg" alt="logo" />
+                    </a>
+                    <div class="header__left">
+                        <div class="header__burger"><span> </span><span> </span><span> </span></div>
+                        <div class="header__menu menu">
+                            <div class="menu__overlay"></div>
+                            <div class="menu__close"></div>
+
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <div class="menu__link">Выставки и события<span class="menu__item-triangle"></span></div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Посетителям<span class="menu__item-triangle"></span></div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Музей<span class="menu__item-triangle"></span></div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__link">Новости и медиаресурсы<span class="menu__item-triangle"></span></div>
+                                </li>
+                            </ul>
+
+                            <div class="header__btn btn-header btn-header-mobile">
+                                <a class="btn-header__text" href="#btn-header-mobile">Купить билет </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__btn btn-header btn-header-desktop">
+                            <div class="btn-header__text">Купить билет</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <main class="main">
                 <div class="internal-page">
                     <div class="cakendar-page aos-init aos-animate" data-aos="fade">
                         <div class="container">
                             <h1>Календарь событий</h1>
                             <div class="calendar">
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day"></div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__header">
+                                        <h4 class="calendar__title">Апрель, 2025</h4>
+                                        <div class="calendar__arrows">
+                                            <button class="calendar_arrow calendar_arrow_left">
+                                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="1.5"
+                                                        d="M15 19l-7-7 7-7"
+                                                    ></path>
+                                                </svg>
+                                            </button>
+                                            <hr />
+                                            <button class="calendar_arrow calendar_arrow_right">
+                                                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <p class="title">Lorem ipsum</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>10</span>
+                                    <div class="calendar__cell">
+                                        <div class="calendar__weekdays">
+                                            <div class="calendar__weekday">ПН</div>
+                                            <div class="calendar__weekday">ВТ</div>
+                                            <div class="calendar__weekday">СР</div>
+                                            <div class="calendar__weekday">ЧТ</div>
+                                            <div class="calendar__weekday">ПТ</div>
+                                            <div class="calendar__weekday">СБ</div>
+                                            <div class="calendar__weekday">ВС</div>
+                                        </div>
+                                        <div class="calendar__days">
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+
+                                            <a href="#" class="calendar__day event">
+                                                <span class="calendar__number">1</span>
+                                                <img
+                                                    src="https://artmmuseum.ru/upload/medialibrary/b1f/34lmucndkbdn7cadkb21qb0alb3pi9s9.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            <a class="calendar__day"><span class="calendar__number">2</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">3</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">4</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">5</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">6</span></a>
+                                            <a href="#" class="calendar__day today event"
+                                                ><span class="calendar__number">7</span>
+                                                <img
+                                                    src="https://artmmuseum.ru//upload/resize_cache/iblock/d40/1381_1381_1/65jirjj74bqajj3a7vep7csvrrv4t19l.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            <a class="calendar__day"><span class="calendar__number">8</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">9</span></a>
+                                            <a href="#" class="calendar__day"><span class="calendar__number">10</span> </a>
+                                            <a class="calendar__day"><span class="calendar__number">11</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">12</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">13</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">14</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">15</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">16</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">17</span></a>
+                                            <a href="#" class="calendar__day event"
+                                                ><span class="calendar__number">18</span>
+                                                <img src="https://artmmuseum.ru//upload/iblock/df7/s4369h8wcj59mbxp3ltjadw3vj6egl8w.jpg" alt="" />
+                                            </a>
+                                            <a class="calendar__day"><span class="calendar__number">19</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">20</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">21</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">22</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">23</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">24</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">25</span></a>
+                                            <a href="#" class="calendar__day event"
+                                                ><span class="calendar__number">26</span>
+                                                <img src="https://artmmuseum.ru//upload/iblock/748/h4nme7w33qpakzt6oojngbsa0o8mhodc.jpg" alt="" />
+                                            </a>
+                                            <a class="calendar__day"><span class="calendar__number">27</span> </a>
+                                            <a class="calendar__day"><span class="calendar__number">28</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">29</span></a>
+                                            <a class="calendar__day"><span class="calendar__number">30</span></a>
+
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                            <a class="calendar__day"></a>
+                                        </div>
                                     </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">«Делу время – потехе час». Художественная обработка дерева, текстиль. Из собрания музея</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>22</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
-                                </div>
-                                <div class="calendar__day">
-                                    <div class="calendar__number">
-                                        <span>1</span>
-                                    </div>
-                                    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iste?</p>
                                 </div>
                             </div>
                         </div>
