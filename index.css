@@ -12576,7 +12576,7 @@ a.blue-link::before {
 .calendar__day .calendar__count {
 	position: absolute;
 	right: -10px;
-	top: -5px;
+	top: -4px;
 	border-radius: 50%;
 	background-color: #e6bf00;
 	color: #fff;
