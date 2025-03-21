@@ -12507,6 +12507,10 @@ a.blue-link::before {
 	overflow: hidden;
 }
 
+.calendar__day_other {
+	color: #8b9095;
+}
+
 .calendar__day img {
 	position: absolute;
 	width: 100%;
