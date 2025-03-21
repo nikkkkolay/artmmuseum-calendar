@@ -12413,7 +12413,7 @@ a.blue-link::before {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: end;
 	flex-wrap: wrap;
 	gap: 14px;
 	margin-bottom: 20px;
@@ -12428,7 +12428,6 @@ a.blue-link::before {
 	border-radius: 10px;
 	border: .5px solid #1c1825;
 	overflow: hidden;
-	margin-right: 10px;
 }
 
 .calendar__arrows hr {
@@ -12488,8 +12487,7 @@ a.blue-link::before {
 	background-color: #1c1825;
 	border-bottom: .5px solid #fff;
 	color: #fff;
-	cursor: pointer;
-	font-weight: 500;
+
 }
 
 .calendar__weekday:last-child {
@@ -12497,6 +12495,9 @@ a.blue-link::before {
 }
 
 .calendar__day {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 10px;
 	border-right: .5px solid #fff;
 	border-bottom: .5px solid #fff;
@@ -12513,9 +12514,21 @@ a.blue-link::before {
 	object-fit: cover;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	object-position: center;
 	z-index: 100;
-	transition: transform 0.4s ease-in-out;
+	transition: transform .5s ease-in-out;
+}
+
+.calendar__day p {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	position: relative;
+	z-index: 300;
+	color: #fff;
 }
 
 .calendar__day:has(img):hover img {
@@ -12528,8 +12541,8 @@ a.blue-link::before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 50%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	height: 60%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 	pointer-events: none;
 	z-index: 300;
 }
@@ -12539,13 +12552,14 @@ a.blue-link::before {
 	background-color: #fff;
 }
 
+
 .calendar__day .calendar__number {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 24px;
 	height: 24px;
-	font-weight: 500;
+
 	position: relative;
 	z-index: 400;
 }
@@ -12554,6 +12568,22 @@ a.blue-link::before {
 	border-radius: 50%;
 	background-color: #2fa6d4;
 	color: #fff;
+}
+
+.calendar__day .calendar__count {
+	position: absolute;
+	right: -10px;
+	top: -5px;
+	border-radius: 50%;
+	background-color: #e6bf00;
+	color: #fff;
+	width: 15px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	line-height: 1;
 }
 
 .calendar__day:nth-child(7),
@@ -12575,7 +12605,7 @@ a.blue-link::before {
 	}
 
 	.calendar__title {
-		font-size: 22px;
+		font-size: 24px;
 	}
 
 	.calendar__arrows button {
@@ -12586,6 +12616,24 @@ a.blue-link::before {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.calendar__day.event::before {
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+	}
+
+	/* .calendar__day.event .calendar__number {
+		color: #fff;
+		background-color: unset;
+	} */
+
+	.calendar__day.today .calendar__number {
+		background-color: #2fa6d4;
+	}
+
+	.calendar__day p {
+		display: none;
 	}
 }
 
