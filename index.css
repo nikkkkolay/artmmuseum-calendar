@@ -12582,6 +12582,9 @@ a.blue-link::before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.calendar__day .calendar__count span {
 	font-size: 12px;
 	line-height: 1;
 }
