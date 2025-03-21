@@ -7015,7 +7015,7 @@ a.blue-link::before {
 }
 
 .show-more-btn-wrapper .show-more-btn span {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .card-general__description {
@@ -12515,13 +12515,23 @@ a.blue-link::before {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	object-position: center;
 	z-index: 100;
-	transition: transform .5s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	left: 0;
+	top: 0;
+
+	/* Улучшенное качество */
+	image-rendering: high-quality;
+	image-rendering: auto;
+
+	/* Оптимизация рендеринга */
+	backface-visibility: hidden;
+	transform: translateZ(0);
+}
+
+.calendar__day:has(img):hover img {
+	transform: scale(1.05);
 }
 
 .calendar__day p {
@@ -12532,10 +12542,6 @@ a.blue-link::before {
 	position: relative;
 	z-index: 300;
 	color: #fff;
-}
-
-.calendar__day:has(img):hover img {
-	transform: scale(1.1);
 }
 
 .calendar__day.event::before {
@@ -12601,10 +12607,6 @@ a.blue-link::before {
 	border-right: unset;
 }
 
-.calendar__day:has(img):hover img {
-	transform: scale(1.1);
-}
-
 @media (max-width: 1100px) {
 	.calendar {
 		margin-top: 40px;
@@ -12630,7 +12632,7 @@ a.blue-link::before {
 
 	.calendar__day.event::before {
 		height: 100%;
-		background: none;
+		background: gba(0, 0, 0, 0.4);
 	}
 
 	.calendar__day .calendar__number {
