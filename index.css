@@ -12482,12 +12482,11 @@ a.blue-link::before {
 }
 
 .calendar__weekday {
-	padding: 16px;
+	padding: 16px 12px;
 	border-right: .5px solid #fff;
 	background-color: #1c1825;
 	border-bottom: .5px solid #fff;
 	color: #fff;
-
 }
 
 .calendar__weekday:last-child {
@@ -12623,6 +12622,10 @@ a.blue-link::before {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.calendar__weekday {
+		text-align: center;
 	}
 
 	.calendar__day.event::before {
