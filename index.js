@@ -31807,6 +31807,7 @@ var swiper = new Swiper(".mediacenter__swiper", {
 
 var swiper = new Swiper(".events__swiper", {
     slidesPerView: 1.2,
+    initialSlide: 1,
     centeredSlides: true,
     spaceBetween: 10,
     breakpoints: {
@@ -31824,6 +31825,7 @@ var swiper = new Swiper(".events__swiper", {
         },
         480: {
             centeredSlides: false,
+            slidesPerView: 1,
         },
     },
 
@@ -31861,7 +31863,6 @@ var swiper = new Swiper(".calendar__swiper", {
     },
 });
 var swiper = new Swiper(".main__swiper", {
-    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -31869,15 +31870,6 @@ var swiper = new Swiper(".main__swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-    on: {
-        init: function () {
-            const slidesCount = this.slides.length - this.loopedSlides * 2;
-            if (slidesCount === 1) {
-                document.querySelector(".swiper-button-next").style.display = "none";
-                document.querySelector(".swiper-button-prev").style.display = "none";
-            }
-        },
     },
 });
 

@@ -7015,7 +7015,7 @@ a.blue-link::before {
 }
 
 .show-more-btn-wrapper .show-more-btn span {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .card-general__description {
@@ -11635,6 +11635,28 @@ a.blue-link::before {
 	margin: 0
 }
 
+.events__swiper .card-general__img {
+	position: relative;
+	padding-bottom: 133.53%;
+}
+
+.events__swiper .card-general__img img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+@media (max-width: 639px) {
+	.events__swiper .card-general__img {
+		height: auto;
+		padding-bottom: 85.5%;
+	}
+}
+
 .contacts-page__content .block-left-right__row .block-left__item h3 {
 	margin-bottom: 32px
 }
@@ -12366,12 +12388,18 @@ a.blue-link::before {
 
 /*Секци с баннерами */
 
-.main-banners {
+.main__swiper {
 	margin-top: 40px;
-	aspect-ratio: 20/9;
+	aspect-ratio: 21 / 9;
 }
 
-.main-banners img {
+/* @media (max-width: 768px) {
+	.main__swiper {
+		aspect-ratio: 4 / 5;
+	}
+} */
+
+.main__swiper img {
 	object-position: top;
 	object-fit: cover;
 	height: 100%;
