@@ -31848,6 +31848,13 @@ var swiper = new Swiper(".exhibitions__swiper", {
     speed: 1000,
 });
 
+var swiper = new Swiper(".calendar__swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 var swiper = new Swiper(".main__swiper", {
     loop: true,
     navigation: {

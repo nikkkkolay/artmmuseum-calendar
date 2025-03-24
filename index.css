@@ -12510,48 +12510,63 @@ a.blue-link::before {
 	color: #8b9095;
 }
 
-.calendar__day img {
+.calendar__swiper {
 	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.calendar__swiper .swiper-slide img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
 	z-index: 100;
-	transition: transform 0.3s ease-in-out;
-	left: 0;
-	top: 0;
-
-	/* Улучшенное качество */
-	image-rendering: high-quality;
-	image-rendering: auto;
-
-	/* Оптимизация рендеринга */
-	backface-visibility: hidden;
-	transform: translateZ(0);
 }
 
-.calendar__day:has(img):hover img {
-	transform: scale(1.05);
-}
 
-.calendar__day p {
+.calendar__swiper .swiper-slide p {
+	position: absolute;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	position: relative;
-	z-index: 300;
+	z-index: 400;
+	font-size: 16px;
 	color: #fff;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	transition: color 0.3s ease;
 }
 
-.calendar__day.event::before {
+.calendar__swiper .swiper-slide:hover p {
+	color: #e6bf00;
+}
+
+.calendar__swiper .swiper-button-next::after,
+.calendar__swiper .swiper-button-prev::after {
+	font-size: 22px;
+}
+
+.calendar__swiper .swiper-button-prev {
+	left: 6px;
+}
+
+.calendar__swiper .swiper-button-next {
+	right: 6px;
+}
+
+.calendar__swiper .swiper-slide::before {
 	content: '';
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	height: 60%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 	pointer-events: none;
 	z-index: 300;
 }
@@ -12630,10 +12645,10 @@ a.blue-link::before {
 		text-align: center;
 	}
 
-	.calendar__day.event::before {
+	/* .calendar__day.event::before {
 		height: 100%;
 		background: gba(0, 0, 0, 0.4);
-	}
+	} */
 
 	.calendar__day .calendar__number {
 		width: 22px;
@@ -12645,11 +12660,15 @@ a.blue-link::before {
 		background-color: unset;
 	} */
 
-	.calendar__day.today .calendar__number {
+	/* .calendar__day.today .calendar__number {
 		background-color: #2fa6d4;
-	}
+	} */
 
-	.calendar__day p {
+	/* .calendar__day p {
+		display: none;
+	} */
+
+	.calendar__swiper {
 		display: none;
 	}
 }
