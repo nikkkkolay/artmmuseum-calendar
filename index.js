@@ -31849,12 +31849,17 @@ var swiper = new Swiper(".exhibitions__swiper", {
 });
 
 var swiper = new Swiper(".calendar__swiper", {
+    allowTouchMove: false,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1100: {
+            allowTouchMove: true,
+        },
+    },
 });
-
 var swiper = new Swiper(".main__swiper", {
     loop: true,
     navigation: {
