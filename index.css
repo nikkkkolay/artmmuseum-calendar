@@ -12543,7 +12543,7 @@ a.blue-link::before {
 }
 
 .calendar__swiper .swiper-slide:hover p {
-	color: #e6bf00;
+	text-decoration: underline;
 }
 
 .calendar__swiper .swiper-button-next::after,
