@@ -31871,6 +31871,8 @@ var swiper = new Swiper(".main__swiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    speed: 1000,
+    autoHeight: true,
 });
 
 $(".partners__show-more-btn").click(function () {

@@ -12382,25 +12382,27 @@ a.blue-link::before {
 	}
 
 	.card-general__img.card-general__img_long {
-		padding-bottom: 46.5%;
+		/* padding-bottom: 52.5%; */
+		padding-bottom: 43.5%
 	}
 }
 
-/*Секци с баннерами */
+/*Секция с баннерами */
 
 .main__swiper {
 	margin-top: 40px;
-	aspect-ratio: 21 / 9;
 }
 
-/* @media (max-width: 768px) {
-	.main__swiper {
-		aspect-ratio: 4 / 5;
-	}
-} */
+.main__swiper .swiper-wrapper {
+	align-items: center;
+}
+
+.main__swiper .swiper-slide.swiper-slide_ratio {
+	aspect-ratio: 21/9;
+}
 
 .main__swiper img {
-	object-position: top;
+	object-position: center;
 	object-fit: cover;
 	height: 100%;
 	width: 100%;
@@ -12412,20 +12414,21 @@ a.blue-link::before {
 	background: white
 }
 
-/* bx_incl_area */
-
-.exhibitions__col-sm #bx_incl_area_7_4 {
-	height: 100%;
-}
-
-.exhibitions #bx_incl_area_7_5 {
-	overflow: hidden;
-}
-
-.mediacenter #bx_incl_area_7_13,
-.mediacenter-page__items #bx_incl_area_7_1 {
+.main__swiper .hero__anim {
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+}
+
+.main__swiper .quadrants__col:first-child,
+.main__swiper .quadrants__col:nth-child(2),
+.main__swiper .quadrants__col:nth-child(3),
+.main__swiper .quadrants__col:nth-child(4),
+.main__swiper .quadrants__col:nth-child(9),
+.main__swiper .quadrants__col:nth-child(10),
+.main__swiper .quadrants__col:nth-child(11),
+.main__swiper .quadrants__col:nth-child(12) {
+	display: initial;
 }
 
 /* Календарь событий */
@@ -12740,6 +12743,22 @@ a.blue-link::before {
 		min-height: 51.2px;
 	}
 
+}
+
+/* bx_incl_area */
+
+.exhibitions__col-sm #bx_incl_area_7_4 {
+	height: 100%;
+}
+
+.exhibitions #bx_incl_area_7_5 {
+	overflow: hidden;
+}
+
+.mediacenter #bx_incl_area_7_13,
+.mediacenter-page__items #bx_incl_area_7_1 {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=maps/main.min.css.map */
