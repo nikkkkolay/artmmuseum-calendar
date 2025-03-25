@@ -12157,7 +12157,6 @@ a.blue-link::before {
 	-ms-grid-columns: 1fr 10px 2fr;
 	grid-template-columns: 1fr 2fr;
 	gap: 10px;
-	margin: 35px 0 0
 }
 
 .areas__card_exhibitions,
@@ -12343,6 +12342,7 @@ a.blue-link::before {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin-top: 35px;
 }
 
 .mediacenter-home-wrapper .mediacenter-home-wrapper__item {
