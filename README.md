@@ -22,5 +22,4 @@
 - JavaScript 
 - Swiper.js
 
-Продакшен-версия календаря доступна по ссылке:  
-👉 [https://artmmuseum.ru/calendar/](https://artmmuseum.ru/calendar/)
+Продакшен-версия календаря доступна по ссылке: [https://artmmuseum.ru/calendar/](https://artmmuseum.ru/calendar/)
